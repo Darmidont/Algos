@@ -9,7 +9,7 @@ namespace Helper
 {
     public static class ListHelper
     {
-        public static List<T> GetList<T>(int length) where T :struct
+        public static List<T> GetList<T>(int length) where T : struct
         {
             Contract.Requires(length > 0);
             var tList = new List<T>();
@@ -45,7 +45,6 @@ namespace Helper
 
                         value = rnd.Next(minVal, maxValue);
                     }
-                    
                 }
 
                 intList.Add(value);
@@ -53,6 +52,5 @@ namespace Helper
 
             return intList;
         }
-
     }
 }

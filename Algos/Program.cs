@@ -15,7 +15,7 @@ namespace Algos
             //InsertionSort.InsertionSort.Sort(null);
            // List<int> intList = ListHelper.GetList<int>(77);
             var intList = ListHelper.GetRandomList(10, true, 0, 15);
-
+            MergeSort.MergeSort.Sort(intList);
             Console.WriteLine("End a program");
             Console.ReadLine();
         }
